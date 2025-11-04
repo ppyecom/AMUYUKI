@@ -1,0 +1,40 @@
+.explorer{
+    background-color: #FDF8EE;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.explorer .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    gap: 10px;
+}
+
+.explorer .text .title{
+    font-family: "Jost", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.explorer .text .sub{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666666;
+    opacity: 0.6;
+}
+
+.cards-explorer{
+    display: flex;
+    gap: 30px;
+}

@@ -1,0 +1,117 @@
+.card-explorer {
+  width: 430px;
+  height: 310px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.card-explorer .banner-explorer {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-explorer .banner-explorer img {
+  width: 95%;
+  height: 90%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+}
+
+.card-explorer .body-card-explorer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sub-card-explorer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-card-explorer .subspan {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #acacac;
+}
+
+.body-card-explorer .description {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card-explorer .sections {
+  display: flex;
+  gap: 20px;
+}
+
+.card-explorer .sections .section-item {
+  display: flex;
+  color: #acacac;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  gap: 5px;
+}
+
+.icon-section {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.wavy {
+  border: none;
+  height: 10px;
+  background: repeating-linear-gradient(
+    45deg,
+    #6b4423,
+    #6b4423 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  opacity: 0.3;
+  margin: 10px 0;
+}
+
+.card-explorer button {
+  position: relative;
+  width: 140px;
+  height: 50px;
+  background-color: #874526;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  align-self: center;
+  top: 17px;
+  box-shadow: 0 6px 0 #5a2f18, 0 8px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease;
+}
+
+.card-explorer button:hover {
+  box-shadow: 0 3px 0 #5a2f18, 0 5px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(3px);
+}
+
+.card-explorer button:active {
+  box-shadow: 0 0 0 #5a2f18, 0 2px 5px rgba(0, 0, 0, 0.3);
+  transform: translateY(6px);
+}

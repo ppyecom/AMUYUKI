@@ -1,5 +1,9 @@
 import React from 'react'
 import './home.css'
+import CreateHome from './create/CreateHome'
+import Explorer from './explorer/Explorer'
+import About from './about/About'
+import Footer from '../../common/footer/Footer'
 
 const Home = () => {
   return (
@@ -30,10 +34,20 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="group333"></div>
+        <img className='figure-home-little fig1' src="/images/home/fig1.png" alt="" />
+        <img className='figure-home-little fig2' src="/images/home/fig2.png" alt="" />
+        <img className='figure-home-little fig3' src="/images/home/fig3.png" alt="" />
+        <img className='figure-home-little fig4' src="/images/home/fig4.png" alt="" />
+        <img className='figure-home fig5' src="/images/home/fig5.png" alt="" />
+        <img className='figure-home-little fig6' src="/images/home/fig6.png" alt="" />
 
+        
       </section>
-
+      <div className="carousel"></div>
+      <CreateHome />
+      <Explorer />
+      <About />
+      <Footer />
     </div>
   )
 }
