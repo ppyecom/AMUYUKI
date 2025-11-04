@@ -96,6 +96,8 @@
   list-style: none;
   gap: 25px;
   font-size: 15px;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-general .options-footer .selects nav li {

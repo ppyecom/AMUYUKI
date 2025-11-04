@@ -3,7 +3,6 @@ import './home.css'
 import CreateHome from './create/CreateHome'
 import Explorer from './explorer/Explorer'
 import About from './about/About'
-import Footer from '../../common/footer/Footer'
 
 const Home = () => {
   return (
@@ -47,7 +46,6 @@ const Home = () => {
       <CreateHome />
       <Explorer />
       <About />
-      <Footer />
     </div>
   )
 }
