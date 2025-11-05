@@ -30,7 +30,11 @@
   width: 100%;
   height: 100vh;
   background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   position: relative;
+  gap: 30px;
+  align-items: start;
 }
 
 .feature-card {
@@ -130,50 +134,50 @@
 }
 
 .feature-card.historia {
-  position: relative;
-  left: 250px;
+  position: absolute;
+  left: 280px;
 }
 
 .feature-card.conecta {
-  position: relative;
-  left: 170px;
-  top: 110px;
+  position: absolute;
+  left: 150px;
+  top: 320px;
 }
 
 .feature-card.aprende {
-  position: relative;
-  left: 260px;
-  top: 190px;
+  position: absolute;
+  left: 280px;
+  bottom: 210px;
 }
 
 .feature-card.guia {
-  position: relative;
-  left: 500px;
-  top: 240px;
+  position: absolute;
+  left: 400px;
+  bottom: 50px;
 }
 
 .feature-card.habla {
-  position: relative;
-  left: 1300px;
-  bottom: 600px;
+  position: absolute;
+  right: 380px;
+  top: 30px;
 }
 
 .feature-card.cultura {
-  position: relative;
-  left: 1450px;
-  bottom: 550px;
+  position: absolute;
+  right: 250px;
+  bottom: 530px;
 }
 
 .feature-card.idioma {
-  position: relative;
-  left: 1500px;
-  bottom: 470px;
+  position: absolute;
+  right: 290px;
+  bottom: 370px;
 }
 
 .feature-card.historias {
-  position: relative;
-  left: 1200px;
-  bottom: 400px;
+  position: absolute;
+  right: 500px;
+  bottom: 50px;
 }
 
 .caricatura {
