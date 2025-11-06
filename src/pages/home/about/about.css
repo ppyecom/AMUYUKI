@@ -13,17 +13,15 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-  
 }
 
-.content-about .left{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.content-about .left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
 
 .content-about .left img {
   width: 82px;
@@ -42,8 +40,84 @@
   font-size: 17px;
   font-weight: 100;
   padding-top: 70px;
-  color: #1C1C1C;
+  color: #1c1c1c;
   opacity: 0.6;
   width: 90%;
 }
 
+/* ✅ Tablets (pantallas medianas: 992px o menos) */
+@media (max-width: 992px) {
+  .section-about {
+    height: auto;
+    padding: 60px 0;
+  }
+
+  .content-about {
+    width: 85%;
+    height: auto;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .content-about .left {
+    align-items: center;
+  }
+
+  .content-about .left img {
+    width: 70px;
+    height: auto;
+  }
+
+  .content-about .left .title-about {
+    font-size: 38px;
+  }
+
+  .content-about .left .sub-about {
+    font-size: 16px;
+    width: 100%;
+    padding-top: 40px;
+  }
+}
+
+/* ✅ Móviles grandes (768px o menos) */
+@media (max-width: 768px) {
+  .content-about {
+    width: 90%;
+    gap: 40px;
+  }
+
+  .content-about .left .title-about {
+    font-size: 32px;
+  }
+
+  .content-about .left .sub-about {
+    font-size: 15px;
+  }
+}
+
+/* ✅ Móviles pequeños (480px o menos) */
+@media (max-width: 480px) {
+  .section-about {
+    padding: 40px 0;
+  }
+
+  .content-about {
+    width: 95%;
+    gap: 30px;
+  }
+
+  .content-about .left img {
+    width: 60px;
+  }
+
+  .content-about .left .title-about {
+    font-size: 26px;
+    padding-top: 10px;
+  }
+
+  .content-about .left .sub-about {
+    font-size: 14px;
+    padding-top: 30px;
+  }
+}

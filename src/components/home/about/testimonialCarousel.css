@@ -1,10 +1,7 @@
 .testimonial-container {
   background: linear-gradient(135deg, #FDF8EE 0%, #FDF8EE 100%);
   border-radius: 24px;
-  padding-left: 48px;
-  padding-right: 48px;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding: 20px 48px 30px 48px;
   width: 750px;
   height: 350px;
   position: relative;
@@ -16,6 +13,7 @@
     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
 }
 
 .testimonial-header {
@@ -25,15 +23,6 @@
   width: 100%;
   height: 20%;
 }
-
-.testimonial-content {
-  width: 100%;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content:space-between;
-}
-
 
 .testimonial-title {
   color: #8b3a3a;
@@ -54,7 +43,6 @@
   background-color: #d4b5a0;
   cursor: pointer;
   transition: all 0.3s ease;
-  padding: 0;
 }
 
 .dot:hover {
@@ -67,6 +55,14 @@
   height: 14px;
 }
 
+.testimonial-content {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .testimonial-quote {
   color: #2d2d2d;
   font-size: 24px;
@@ -74,7 +70,6 @@
   margin: 0 0 48px 0;
   font-weight: 700;
   width: 80%;
-  height: 80%;
   display: flex;
   align-items: center;
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -85,7 +80,6 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 20%;
 }
 
 .testimonial-author {
@@ -102,20 +96,11 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.author-placeholder {
-  background: linear-gradient(135deg, #8b3a3a, #a64d4d);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 32px;
-  font-weight: 600;
-}
-
 .author-info {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
+  margin: 0;
 }
 
 .author-name {
@@ -123,6 +108,7 @@
   font-size: 18px;
   font-weight: 600;
   margin: 0;
+  text-align: start;
 }
 
 .author-position {
@@ -160,47 +146,99 @@
   transform: scale(0.95);
 }
 
-
-/* Responsive 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .testimonial-container {
-    padding: 32px 24px;
-  }
-
-  .testimonial-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    padding: 32px 32px 36px 32px;
   }
 
   .testimonial-quote {
     font-size: 20px;
+    width: 100%;
     margin-bottom: 32px;
   }
 
-  .testimonial-footer {
-    flex-direction: column;
-    gap: 24px;
-    align-items: flex-start;
-  }
-
-  .testimonial-navigation {
-    align-self: flex-end;
+  .author-image {
+    width: 70px;
+    height: 70px;
   }
 
   .nav-button {
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
   }
+}
+
+@media (max-width: 768px) {
+  .testimonial-container {
+    width: 90%;
+    height: auto;
+    padding: 28px 24px;
+  }
+
+  .testimonial-header {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .testimonial-title {
+    font-size: 16px;
+  }
+
+  .testimonial-quote {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .testimonial-footer {
+    gap: 20px;
+  }
+
+
 
   .author-image {
     width: 64px;
     height: 64px;
   }
 
-  .activate-section {
-    position: static;
-    margin-top: 24px;
-    text-align: right;
+  .nav-button {
+    width: 44px;
+    height: 44px;
   }
-}*/
+}
+
+@media (max-width: 480px) {
+  .testimonial-container {
+    width: 95%;
+    padding: 24px 18px;
+  }
+
+  .testimonial-title {
+    font-size: 15px;
+  }
+
+  .testimonial-quote {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .author-image {
+    width: 55px;
+    height: 55px;
+  }
+
+  .author-name {
+    font-size: 16px;
+  }
+
+  .author-position {
+    font-size: 13px;
+  }
+
+  .nav-button {
+    width: 40px;
+    height: 40px;
+  }
+}
