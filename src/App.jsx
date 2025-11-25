@@ -2,7 +2,9 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Header from "./common/header/Header";
-import Footer from "./common/footer/Footer";
+import Languages from "./pages/languages/Languages";
+import Login from "./pages/login/Login";
+import Dashboard from "./pages/system/dashboard/Dashboard";
 
 const App = () => {
   return (
@@ -10,8 +12,10 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/lenguas" element={<Languages />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 };
