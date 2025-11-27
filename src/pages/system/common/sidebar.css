@@ -1,128 +1,129 @@
-
-
-/* Contenedor principal del Sidebar */
 .sidebar-container {
-  width: 240px; /* Ancho fijo similar al de la imagen */
-  height: 100vh; /* Altura completa de la vista */
-  background-color: var(--primary-bg);
-  color: var(--text-color);
-  font-family: Arial, sans-serif; /* Puedes ajustar la fuente */
-  padding: 10px 0;
-  box-sizing: border-box;
-  position: relative;
-  overflow-y: auto; /* Para permitir scroll si el contenido es muy largo */
-  border-radius: 20px; /* Bordes redondeados */
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
+  background-color: rgba(146, 58, 33, 0.7);
+  border-radius: 20px;
+  color: white;
+  width: 250px;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  padding: 18px 12px;
+  box-sizing: border-box;
+}
 
 .sidebar-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 10px 15px 20px 15px;
-  background-color: var(--header-bg-color);
-}
-
-.logo-placeholder {
-  
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .amuyuki-logo {
-  width: 150px; /* Ajusta el tamaño del logo */
+  width: 200px;
   height: auto;
 }
 
-.close-button-placeholder {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: var(--close-icon-bg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transform: translateX(15px); /* Desplaza el botón fuera del borde derecho */
-  position: absolute;
-  right: 0;
-  top: 15px;
-}
-
-.close-icon {
-  color: var(--close-icon-color);
-  font-size: 18px;
-  font-weight: bold;
-  transform: scaleY(1.5) rotate(180deg); /* Voltear la flecha hacia la izquierda */
-}
-
-/* ----- Navegación (Menú) ----- */
-
 .sidebar-nav {
-  padding: 0 15px;
+  margin-top: 12px;
+  overflow-y: auto; 
+  max-height: calc(100vh - 220px);
+  padding-right: 6px;
 }
 
-.menu-section {
-  margin-bottom: 20px;
-}
-
-.section-title {
-  font-size: 1em;
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 10px;
-  color: var(--text-color);
-  opacity: 0.8; /* Ligeramente más claro que los ítems */
-}
-
-.sidebar-nav ul {
+/* reset ul */
+.sidebar-container ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+.section-title {
+  padding: 10px 6px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.85;
+  color: rgba(255,255,255,0.9);
+}
+
 .nav-item {
+  padding: 12px 12px;
   display: flex;
   align-items: center;
-  padding: 8px 0;
   cursor: pointer;
-  font-size: 1.1em;
-  font-weight: 500;
-  transition: background-color 0.2s;
+  text-decoration: none;
+  color: #FAF4E5;
+  position: relative;
+  transition: background-color 0.25s, color 0.2s;
+  border-left: 4px solid transparent;
+  border-radius: 8px;
+  margin: 4px 4px; 
 }
 
 .nav-item:hover {
-  /* Estilo al pasar el ratón */
-  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.nav-item.active {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-weight: 600;
+  border-left: 4px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
 }
 
 .item-icon {
-  margin-right: 15px;
-  font-size: 1.2em; /* Para los emojis placeholder */
+  margin-right: 12px;
+  font-size: 18px;
+  opacity: 0.95;
+  width: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-name {
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .section-divider {
-  border: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.3); /* Separador sutil */
-  margin: 15px 0;
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.06);
+  margin: 12px 4px;
 }
 
 .profile-config {
   display: flex;
   align-items: center;
-  padding: 15px 15px;
-  font-size: 1.1em;
-  font-weight: 500;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: var(--primary-bg); 
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+  margin: 8px 4px 6px 4px;
+}
+
+.profile-config:hover {
+  background-color: rgba(255,255,255,0.06);
+}
+
+.profile-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .profile-icon {
-  margin-right: 15px;
-  font-size: 1.2em;
+  font-size: 18px;
+  opacity: 0.95;
 }
 
+.profile-text {
+  font-size: 14px;
+  color: rgba(255,255,255,0.9);
+  font-weight: 500;
+}

@@ -1,11 +1,14 @@
 import React from 'react'
 import './dashboard.css'
-import SideBar from '../common/SideBar'
+
 
 const Dashboard = () => {
   return (
-    <div className='sec-dash'>
-        <SideBar />
+    <div className="dashboard-container">
+      <div className="dashboard-content">
+        <h1>Dashboard</h1>
+        <p>Welcome to the dashboard!</p>
+      </div>
     </div>
   )
 }
