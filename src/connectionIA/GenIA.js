@@ -1,7 +1,7 @@
 
 class GenIAService {
 
-    API_URL = 'http://localhost:3001/api/chat';
+    API_URL = 'https://amuyuki-backend.onrender.com/api/chat';
 
     async generateResponse(userMessage) {
         try {
