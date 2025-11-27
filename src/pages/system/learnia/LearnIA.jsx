@@ -1,5 +1,6 @@
 // LearnIA.jsx
 import React, { useState, useRef, useEffect } from 'react';
+import ReactMarkDown from 'react-markdown'
 import './learnia.css';
 import GenIAService from '../../../connectionIA/GenIA';
 
@@ -108,7 +109,7 @@ const LearnIA = () => {
             >
               <div className={`avatar ${message.sender === 'user' ? 'avatar-user' : 'avatar-amuyuki'}`}></div>
               <div className={`message-bubble ${message.sender === 'user' ? 'bubble-user' : 'bubble-amuyuki'}`}>
-                <p>{message.text}</p>
+                <ReactMarkDown>{message.text}</ReactMarkDown>
               </div>
             </div>
           ))}
