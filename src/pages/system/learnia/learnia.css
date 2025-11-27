@@ -30,9 +30,8 @@
 }
 
 .header-avatar {
-  width: 45px;
-  height: 45px;
-  background: #16a34a;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -40,6 +39,12 @@
   color: white;
   font-weight: bold;
   font-size: 18px;
+}
+
+.header-avatar img{
+  object-fit: contain;
+  width: 70px;
+  height: 70px;
 }
 
 .header-title {
@@ -78,9 +83,6 @@
   flex-shrink: 0;
 }
 
-.avatar-amuyuki {
-  background: linear-gradient(135deg, #fbbf24 0%, #f97316 100%);
-}
 
 .avatar-user {
   background: linear-gradient(135deg, #4b5563 0%, #1f2937 100%);
@@ -227,7 +229,6 @@
   transform: translateY(0);
 }
 
-/*  */
 @media (max-width: 768px) {
   .learnia-container {
     padding: 10px;

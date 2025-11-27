@@ -94,7 +94,7 @@ const LearnIA = () => {
     <div className="learnia-container">
       <div className="chat-wrapper">
         <div className="chat-header">
-          <div className="header-avatar">A</div>
+          <div className="header-avatar"><img src="./images/logot.png" alt="" /></div>
           <div>
             <h1 className="header-title">Conversa con AMUYUKI</h1>
             <p className="header-subtitle">Tu profesor de aymara con IA</p>
@@ -107,7 +107,9 @@ const LearnIA = () => {
               key={message.id}
               className={`message-row ${message.sender === 'user' ? 'message-user' : 'message-amuyuki'}`}
             >
-              <div className={`avatar ${message.sender === 'user' ? 'avatar-user' : 'avatar-amuyuki'}`}></div>
+              <div className={`avatar ${message.sender === 'user' ? 'avatar-user' : 'avatar-amuyuki'}`}>
+                {message.sender === 'user' ? null : <img src="./images/logot.png" alt="Amuyuki Avatar" style={{'objectFit': 'contain', 'width':'60px' }}/>}
+              </div>
               <div className={`message-bubble ${message.sender === 'user' ? 'bubble-user' : 'bubble-amuyuki'}`}>
                 <ReactMarkDown>{message.text}</ReactMarkDown>
               </div>
