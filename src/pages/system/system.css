@@ -16,6 +16,7 @@ body{
     height: 10%;
     justify-content: space-between;
 }
+
 .system .right .windows{
     width: 100%;
     height: 90%;
@@ -32,3 +33,49 @@ body{
     flex-direction: column;
     width: 90%;
 }
+
+
+.system .right .system-header .options-user {
+    display: flex;
+    line-height: 0;
+}
+
+.system .right .system-header .options-user button {
+    background-color: #331A21;
+    border: none;
+    padding: 10px; 
+    height: 50px; 
+    width: 50px; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border-radius: 50%;
+}
+
+
+.system .right .system-header .options-user button:first-child {
+    border-radius: 35px;
+}
+
+.system .right .system-header .options-user button:nth-child(2) {
+    border-radius: 35px; 
+    margin-left: 10px; 
+    position: relative; 
+    z-index: 1; 
+}
+
+.system .right .system-header .options-user button:last-child {
+    border-radius: 35px; 
+    margin-left: 10px; 
+    position: relative;
+    z-index: 2; 
+}
+
+.system .right .system-header .options-user button img {
+    height: 25px;
+    width: 25px;
+    object-fit: contain;
+}
+

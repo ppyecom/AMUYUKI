@@ -4,12 +4,10 @@ import CreateHome from './create/CreateHome'
 import Explorer from './explorer/Explorer'
 import About from './about/About'
 import Footer from '../../common/footer/Footer'
-import Header from '../../common/header/Header'
 
 const Home = () => {
   return (
     <div className="home">
-      <Header />
       <section className="hero">
         <div className="hero-container">
           <div className="hero-content">

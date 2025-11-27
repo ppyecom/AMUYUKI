@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './login.css';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -138,9 +139,10 @@ const Login = () => {
                 </div>
               )}
 
-              <button onClick={handleSubmit} className="btn-submit">
+              <Link to="/learnia"><button /*onClick={handleSubmit}*/ className="btn-submit">
                 {isLogin ? 'Iniciar Sesión' : 'Crear Cuenta'}
               </button>
+              </Link>
 
               <div className="divider">
                 <span>o continúa con</span>

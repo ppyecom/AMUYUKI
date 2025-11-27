@@ -1,7 +1,7 @@
 .languages {
   width: 100%;
   padding: 6rem 2rem;
-  background-color: #fff;
+  background-color: --accent-cream;
 }
 
 .content-languages {
