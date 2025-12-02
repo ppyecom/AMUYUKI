@@ -75,7 +75,7 @@ const TestimonialCarousel = () => {
       </div>
 
       <div className="testimonial-content">
-        <blockquote className="testimonial-quote">
+        <blockquote className="testimonial-quote" style={{margin: testimonials[currentIndex] === 0 ? "0px" : "0 0 0"}}>
           "{testimonials[currentIndex].text}"
         </blockquote>
 
